@@ -1,0 +1,38 @@
+@import 'default.module.css';
+
+.light, .dark {
+    padding: 8px 28px;
+    font-family: "Poppins";
+    font-weight: normal;
+    font-size: 15px;
+    margin: 0;
+    transition: ease-in 0.2s;
+    border: 1px solid var(--teal-dark);
+    color: var(--teal-dark);
+    width: fit-content;
+    text-decoration: none;
+}
+
+.dark {
+    background: var(--black);
+}
+
+.dark:hover {
+    background: var(--yellow-light);
+}
+
+.light:hover {
+    background: var(--teal-dark);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.icon svg {
+    margin: -8px -20px 0 -20px;
+    transform: translateY(6px);
+}
+
+.iconText .icon svg {
+    margin-left: -2px;
+    margin-right: 8px;
+}

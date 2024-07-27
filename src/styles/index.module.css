@@ -1,0 +1,41 @@
+@import 'default.module.css';
+
+/* LOADING */
+
+.loadWrapper {
+    margin: auto;
+    margin-top: calc(50vh - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.loadBar {
+    width: 100%;
+    height: 20px;
+    border: 1px solid var(--brown);
+}
+
+.loadText {
+    margin-top: 8px;
+    color: var(--brown);
+}
+
+@keyframes load {
+    from {width: 0px;}
+    to {width: 100%;}
+    }
+  
+/* The element to apply the animation to */
+.loaded {
+    height: 20px;
+    width: 100%;
+    background-color: var(--brown);
+    animation-name: load;
+    animation-duration: 2.7s;
+}
+
+.link {
+    display: block;
+}
