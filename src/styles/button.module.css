@@ -1,5 +1,9 @@
 @import 'default.module.css';
 
+a {
+    text-decoration: none;
+}
+
 .light, .dark {
     padding: 8px 28px;
     font-family: "Poppins";
@@ -15,6 +19,7 @@
 
 .dark {
     background: var(--black);
+    color: var(--teal-dark);
 }
 
 .dark:hover {

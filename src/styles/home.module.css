@@ -124,6 +124,14 @@
     margin-top: 16px;
 }
 
+.links a {
+    text-decoration: underline;
+}
+
+.links a:hover {
+    color: var(--teal-dark);
+}
+
 
 /* PROJECTS */
 

@@ -97,7 +97,7 @@ const HomePage = ({ location }) => {
                               desc="Web design & development for professional organizations @ UC Berkeley" />
                   </div>
                   <div onClick={() => setProject("circles")}>
-                    <Project title="DATA ANALYTICS DASHBOARD" company="Circles.Life" year="2022" fav={true}
+                    <Project title="DATA ANALYTICS DASHBOARD" company="Circles.Life" year="2022" fav={false}
                             desc="Research and implementation of a tableu-like UI for data analytics on a national scale" />
                   </div>
                   <div onClick={() => setProject("gitlet")}>
