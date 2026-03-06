@@ -324,7 +324,7 @@ p.link {
 
 .yellowBox {
     background: var(--yellow-light);
-    border: 1px solid var(--yellow-light)
+    border: 1px solid var(--yellow-light);
 }
 
 .stackedBox:not(:last-child) {

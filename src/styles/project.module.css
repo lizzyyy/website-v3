@@ -207,7 +207,7 @@
     }
 }
 
-@media ((min-width: 768px) and (max-width: 959px)) or (max-width: 449px) {
+@media (min-width: 768px) and (max-width: 959px), (max-width: 449px) {
     .projectInfo .buttons {
         flex-wrap: wrap;
         gap: 8px;
