@@ -105,7 +105,7 @@
 .intro .status .dot {
     width: 8px;
     height: 8px;
-    animation: blink s infinite;
+    animation: blink 1s infinite;
 }
 
 @keyframes blink {
