@@ -23,7 +23,7 @@ const IndexPage = () => {
             Loading...
           </p>
         </div>
-        <Link to={'/home/'} state={{ firstVisit: 0 }} ref={homeRef}></Link>
+        <Link to={'/projects/'} state={{ firstVisit: 0 }} ref={homeRef}></Link>
       </body>
     </main>
   )

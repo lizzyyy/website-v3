@@ -24,8 +24,11 @@
     --green: #c7ea74;
     --yellow: #f6e46f;
     --red: #ff7979;
+    --blue: #ecf8f8;
     --teal-dark: #9CBAB8;
+    --grey-light: #EFEFEF;
     --yellow-light: #FEFAE0;
+    --grey-dark: #ababab;
     --yellow-transparent: rgba(224, 255, 79, 0.17);
     --blue-transparent: rgba(160, 255, 227, 0.13);
     --red-transparent: rgba(255, 42, 109, 0.19);
@@ -51,6 +54,14 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    color: var(--black);
+    font-family: "Poppins";
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+}
+
 p {
     color: var(--black);
     font-family: "Poppins";
@@ -70,6 +81,14 @@ a {
     text-decoration: underline;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+p a {
+    text-decoration: underline;
+}
+
 ul {
     padding-inline-start: 20px;
 }
@@ -85,6 +104,11 @@ li:not(:last-child) {
 
 mark {
     background-color: var(--yellow-light);
+    color: var(--black);
+}
+
+::selection {
+    background-color: var(--blue);
 }
 
 /* CLOCK */
@@ -105,4 +129,28 @@ mark {
 
 .clock p {
     color: var(--brown);
+}
+
+@media (max-width: 767px) {
+    .clock {
+        transform: translateY(70px);
+    }
+
+    .homeClock {
+        transform: translateY(0);
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 449px) {
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }

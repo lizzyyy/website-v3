@@ -146,3 +146,92 @@
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 }
+
+
+
+@media (max-width: 959px) {
+    .rightScreen {
+        overflow-y: scroll;
+    }
+
+    .projectItemWrapper {
+        margin-top: 10%;
+    }
+
+    .images {
+        margin: 0 10%;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .images .imgWrapper {
+        width: 80%;
+    }
+
+    .images .image2 {
+        margin: 0;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width:767px) {
+    .images .imgWrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 449px) {
+    .projectItemWrapper {
+        margin-top: 50px;
+    }
+
+    .projectItem {
+        padding: 16px 20px;
+    }
+
+    .projectItem .year {
+        display: none;
+    }
+
+    .projectItem .arrow {
+        display: none;
+    }
+
+    .images {
+        margin: 0 20px;
+    }
+
+    .projectInfo {
+        margin: 20px;
+    }
+}
+
+@media ((min-width: 768px) and (max-width: 959px)) or (max-width: 449px) {
+    .projectInfo .buttons {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .projectInfo .buttons > * {
+        flex-basis: 100%;
+    }
+
+    .projectInfo .buttons > *:first-child {
+        order: 5;
+    }
+
+    .projectInfo .buttons a > div {
+        display: block;
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .projectInfo .buttons a:not(:has(div)) {
+        display: block;
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+}

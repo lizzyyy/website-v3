@@ -2,8 +2,12 @@ import React, { useState, useEffect } from "react"
 import * as s from "../styles/about.module.css"
 import { Link } from "gatsby"
 
-import sun from "../images/sun.png"
+import me from "../images/about me.jpg"
+import crochet from "../images/about crochet.jpg"
+import craft from "../images/about craft.jpg"
+
 import Clock from "../components/clock.js";
+import NavBar from "../components/navbar.js";
 
 const AboutPage = () => {
 
@@ -15,19 +19,24 @@ const AboutPage = () => {
     <main>
       <body className={s.bodyWrapper}>
         <Clock />
+        <NavBar selected="about" />
         <div className={s.topHalf}>
           <div className={s.textbox}>
             <h1>ABOUT ME // MOTIVATION</h1>
             <p>Hi! My name is Lizzy. I'm a <b>designer, developer, creator</b>. Currently, I'm a developer at <a href="https://www.socketmobile.com/" target="_blank">Socket Mobile</a>. I spend most of my time dabbling in web design and development, always researching, always learning.</p>
             <p>I enjoy treading the fine line between <mark>&nbsp;art and technology&nbsp;</mark>, making use of Human Centered Design to improve the user experience, then bringing these ideas to life. Outside of work, I enjoy <mark>&nbsp;creating&nbsp;</mark>, trying my hand at all sorts of art projects, from graphic design to fashion design, to jewelry making, to crochet.</p>
-            <p>Maintaining and upgrading this website is a passion project of mine, a playground with no set rules, no client guidelines, to <mark>&nbsp;test my own limits&nbsp;</mark>. See version 1 here.</p>
-            <p>See my other, recent project - an official website for a university organization I co-led: XR @ Berkeley</p>
-            <h2 className={s.boxTitle}>ABOUT ME</h2>
+            <p>Maintaining and upgrading this website is a passion project of mine, a playground with no set rules, no client guidelines, to <mark>&nbsp;test my own limits&nbsp;</mark>.</p>
+            <p>See my other, recent project - an official website for a university organization I co-led: <a href="https://xr.studentorg.berkeley.edu/" target="_blank">XR @ Berkeley</a></p>
+            <div className={s.boxTitle}>
+              <h2>ABOUT ME</h2>
+              <p>(hover to read)</p>
+            </div>
           </div>
 
           <div className={s.images}>
-            <img src={sun} />
-            <img src={sun} />
+            <img src={crochet} />
+            <img src={craft} />
+            <img src={me} className={s.toggleImg} />
           </div>
         </div>
 
@@ -54,7 +63,7 @@ const AboutPage = () => {
           </div>
 
           <div className={s.images}>
-            <img src={sun} />
+            <img src={me} className={s.toggleImg} />
           </div>
         </div>
         {/*Link

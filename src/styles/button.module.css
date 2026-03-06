@@ -41,3 +41,88 @@ a {
     margin-left: -2px;
     margin-right: 8px;
 }
+
+
+/* NAV */
+
+.navWrapper {
+    position: fixed;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    padding: 12px 40px 4px;
+    border-radius: 55px;
+    background-color: rgba(217, 217, 217, 0.2);
+    backdrop-filter: blur(8px); 
+    border: 1px solid var(--white);
+    z-index: 100;
+}
+
+.aboutNav.navWrapper {
+    top: 6px;
+}
+
+.projectsNav.navWrapper {
+    display: none;
+}
+
+.navImg {
+    margin-left: -4px;
+    margin-right: auto; 
+}
+
+.navImg img {
+    opacity: 0.6;
+    transition: ease-in 0.2s;
+    width: 24px;
+}
+
+.navImg:hover img {
+    opacity: 1;
+}
+
+.navLink {
+    color: var(--grey-dark);
+    transition: ease-in 0.2s;
+    font-size: 14px;
+}
+
+.navLink.active {
+    color: var(--black);
+}
+
+.navLink:hover {
+    color: var(--black);
+}
+
+@media (max-width: 767px) {
+    .navWrapper {
+        width: 80%;
+        top: 12px;
+    }
+
+    .projectsNav.navWrapper {
+        display: flex;
+        width: 70%;
+    }
+}
+
+@media (max-width: 449px) {
+    .navWrapper {
+        justify-content: space-between;
+        gap: 12px;
+        padding: 10px 24px;
+    }
+
+    .navImg {
+        display: none;
+    }
+
+    .navLink {
+        font-size: 13px;
+    }
+}

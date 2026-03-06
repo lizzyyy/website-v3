@@ -4,7 +4,7 @@ import * as s from "../styles/default.module.css"
 
 import sun from "../images/sun.png"
 
-const Clock = (noSun = false) => {
+const Clock = (noSun = false, home = false) => {
 
     const [time, setTime] = useState(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
 
@@ -21,7 +21,7 @@ const Clock = (noSun = false) => {
 
 return (
     <section>
-        <div className={s.clock}>
+        <div className={home ? `${s.clock} ${s.homeClock}` : s.clock}>
             <div className={s. time}>
                 <p>{time}</p>
                 {!noSun ? <img src={sun} /> : ""}

@@ -23,7 +23,7 @@ return (
         {type == "more" ? 
         <Link to={link}><div className={btnClass}>{text}</div></Link>
         :
-        <a className={btnClass} href={link}>
+        <a className={btnClass} href={link} target="_blank">
             {type == "github" ? <span className={s.icon}><GitHubIcon /></span> : ""}
             {text}
         </a>
